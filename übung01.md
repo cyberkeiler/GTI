@@ -1,13 +1,18 @@
-1. Welche Behauptungen über Mengen sind wahr/falsch? Begründung?
+# Übung 1
+## 1. Welche Behauptungen über Mengen sind wahr/falsch? Begründung?
 
-0/ ⊆ 0/ 
+ * __Ø ⊆ Ø__ 
 
-0/ ∈ 0/
 
-0/ ∈ { 0/ } 
+ * __Ø ∈ Ø__
 
-0/ ⊆ { 0/ }
 
-0/ ⊆ 2 0
+ * __Ø ∈ { Ø }__ 
+ -> wahr, da Definition der leeren Menge (ausreichende Begründung?)
 
-0/ ∈ 2 0/
+ * __Ø ⊆ { Ø }__
+ -> wahr, Leere Menge ist Teilmenge jeder Menge!
+
+ * __Ø ⊆ 2^Ø__
+
+ * __Ø ∈ 2^Ø__
