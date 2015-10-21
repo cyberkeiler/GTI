@@ -1,28 +1,33 @@
 # Übung 1
 ## 1. Welche Behauptungen über Mengen sind wahr/falsch? Begründung?
 
- * __Ø ⊆ Ø__
+#### $$ \emptyset \subseteq \emptyset$$
 -> wahr, weil beide kein Elemente haben (also jedes Element kommt in beiden vor)
 Ø ist Teilmenge jeder Menge
 
- * __Ø ∈ Ø__
+---
+#### $$ \emptyset \in \emptyset$$
 -> falsch, weil leere Menge enthält keine Elemente
 
- * __Ø ∈ { Ø }__
+---
+#### $$ \emptyset \in \{\emptyset\}$$
  -> wahr,  *{}* ∈ {*{}*} Menge enthält {} als Element
 
- * __Ø ⊆ { Ø }__
+---
+#### $$ \emptyset \subseteq \{\emptyset\}$$
  -> wahr, Leere Menge ist Teilmenge jeder Menge!
 
- * __Ø ⊆ 2^Ø__
+ ---
+#### $$ \emptyset \subseteq 2^\emptyset$$
 -> wahr, laut Definition:
 
 Def. 2^A Potenzmenge: Menge aller Teilmengen von A
 
 Potenzmenge von Ø umfasst nur Ø.
 
- * __Ø ∈ 2^Ø__
--> wahr ???
+---
+#### $$ \emptyset \in 2^\emptyset$$
+-> wahr
 
 ---
 
@@ -51,8 +56,9 @@ __Alphabet:__ Jede nicht leere Menge (>= 1 Symbole)
  * __{a, {a,b}} ⊆ 2^{a,b,{a,b}}__
  -> wahr, Potenzmenge = { ..., {{a,b}}, ..}
 
+---
 
-
+---
 ## 3. Wahr oder falsch. Begründung?
 #### $$ \forall L_1,L_2,L_3: (L_1 L_2) L_3 = L_1 ( L_2 L_3) $$
 -> wahr, Assoziativität - Beweis gefordert
@@ -131,29 +137,33 @@ $$ L^* = L^+ \cup \varepsilon $$
 
 ---
 ## 5.
- * ∀L1,L2 :(L1L2)∗ =L∗1L∗2
+#### $$\forall L_1,L_2 :(L_1L_2)^* = L_1^* L_2^*$$
  -> falsch,
  Gegenbeispiel:
- L_1 = a
- L_2 = b
- $$(\{a,b\})* \neq \{a\}* \{b\}* $$
+ $L_1 = \{a\};L_2 = \{b\}$
+ $$(\{a,b\})^* \neq \{a\}^* \{b\}^* $$
 
- * ∀L1,L2 :(L1∪L2)∗ =(L2∪L1)∗
+---
+ #### $$\forall L_1,L_2 :(L_1 \cup L_2)^* =(L_2 \cup L_1)^*$$
 
--> wahr, kommutiert unterm STern:
+-> wahr, kommutiert bereits unter der kleenschen Hülle:
 $$A \cup B = B \cup A$$
 
 ---
- #### $$ \forall L1,L2 :(L_1 \cup L_2)^* =L_1^* \cup L_2^*$$
+ #### $$ \forall L_1,L_2 :(L_1 \cup L_2)^* =L_1^* \cup L_2^*$$
 -> falsch
  * links mehr wörter als rechts
  * rechts teilmenge von links
  * Beispiel: $L_1 = \{a\} L_2 = \{b\}$
-(L1∪L2)∗ ab möglich
-in L∗1∪L∗2 nicht möglich
+
+$(L_1 \cup L_2)^*$ ist $ab$ möglich
+
+in $ L_1^* \cup L_2^* $ nicht möglich
+
+$$aber: L^*_1 \cup L^*_2 \subseteq L_1^* \cup L_2^*$$
 
 ---
- * ∀L1,L2 :L∗1∩L∗2 =(L1∩L2)∗
+ #### $$ \forall L_1, L_2 :L_1^* \cap L_2^* =(L_1 \cap L_2)^*$$
 -> falsch
 
 Gegenbeispiel: $L_1 = \{a\} L_2 = \{aa\}$
@@ -165,14 +175,8 @@ $$L_1^* \cap L_2^* = \{aa\}^*$$
 ---
 ## 6.
 ### a) $\{ w \in \{a,b\}^* $ | genau ein Suffix von w beginnt mit a$ \}$
-Die Wörter der Sprache bestehen aus den Symbolen a, b und dem leeren Wort, wobei der Suffix mit dem Symbol a beginnen muss.
-
-(Das Wort enthält einem a.
-aa gilt nicht weil Unentscheidbar)
+Jedes Wort besteht aus genau einem a
 
 ### b) {w ∈ {a,b}∗ | alle Präfixe von w mit Länge mindestens 1 enden mit b}
-Die Wörter der Sprache bestehen aus den Symbolen a, b und dem leeren Wort. Sobald ein Präfix mindestens die Länge 1 hat endet es mit dem Symbol b.
-
-(Jedes Wort mit Präfix (ungleich ε) enthält ein b
-beim Vorkommen von einem a ist keine Eindeutigkeit vorhanden)
+Alle Wörter bestehen aus bs. Bzw.
 $\{b\}^*$
