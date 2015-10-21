@@ -3,12 +3,13 @@
 
  * __Ø ⊆ Ø__ 
 -> wahr, weil beide kein Elemente haben (also jedes Element kommt in beiden vor)
+Ø ist Teilmenge jeder Mengr
 
  * __Ø ∈ Ø__
--> falsch, weil leere Menge keine Elemente
+-> falsch, weil leere Menge enthält keine Elemente
 
  * __Ø ∈ { Ø }__ 
- -> wahr, da Definition der leeren Menge (ausreichende Begründung?) *{}* ∈ {*{}*}
+ -> wahr,  *{}* ∈ {*{}*} Menge enthält {} als Element
 
  * __Ø ⊆ { Ø }__
  -> wahr, Leere Menge ist Teilmenge jeder Menge!
@@ -57,22 +58,25 @@ __Alphabet:__ Jede nicht leere Menge (>= 1 Symbole)
 -> wahr, Distributivität
 
 * __∀ L1,L2,L3 : (L1 ∩L2)L3 = L1L3 ∩L2L3__
+-> falsch, Konkatenation nicht kommutativ:
+
 * __∀ L1,L2,L3 : (L1L2)∪L3 = (L1 ∪L3)(L2 ∪L3)__
+-> falsch, Konkatenation nicht kommutativ:
  
 ## 4.
- * __{ε}^*=0/__
+ * __{ε}^*=Ø__
  -> falsch
 
-* __0/∪0/∗={ε}__
+* __Ø∪Ø∗={ε}__
 * 
 
 * __∀L:(L^+)^*=L^*__
--> wahr, da Kleene Star Abschluss. L^+ ohne ε mit ^* wieder mit ε
+-> wahr, da Kleene Star Abschluss. L^+ ohne ε mit ^* wieder mit ε (= ε in beiden enthalten)
 
 * __{ε}^*={ε}__
 -> wahr
 
-* __∀L:0/L∗={ε}__
+* __∀L:0/L^*={ε}__
 -> falsch, wenn L aus mehr als ε besteht, daher nicht ∀L
 
 * __∀L:0/∪L^+=L^∗__
