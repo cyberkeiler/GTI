@@ -3,7 +3,7 @@
 
  * __Ø ⊆ Ø__
 -> wahr, weil beide kein Elemente haben (also jedes Element kommt in beiden vor)
-Ø ist Teilmenge jeder Mengr
+Ø ist Teilmenge jeder Menge
 
  * __Ø ∈ Ø__
 -> falsch, weil leere Menge enthält keine Elemente
@@ -24,18 +24,21 @@ Potenzmenge von Ø umfasst nur Ø.
  * __Ø ∈ 2^Ø__
 -> wahr ???
 
+---
 
-
+---
 ## 2. Welche Behauptungen über Mengen sind wahr/falsch? Begründung?
 __Alphabet:__ Jede nicht leere Menge (>= 1 Symbole)
 
  * __*{a,b}* ∈ {a,b,*{a,b}*}__
 -> wahr: Alphabet {a,b} kommt als Symbol im anderen Alphabet vor
 
- * __{a,b} ⊆ {a,b,{a,b}}__
+ * __*{a,b}* ⊆ {*a*,*b*,{a,b}}__
  -> wahr: a, b kommen als Element in der rechten Menge vor.
 
- *2^{a,b,{a,b}}: {Ø, {a}, {b}, {{a,b}}, {a,b}, {a,{a,b}}, {b,{a,b}}, {a,b,{a,b}}}*
+---
+ Potenzmenge $2^{\{a,b,\{a,b\}\}}: $ $$ \{ \emptyset, \{a\}, \{b\}, \{\{a,b\}\}, \{a,b\}, \{a,\{a,b\}\}, \{b,\{a,b\}\}, \{a,b,\{a,b\}\}\}$$
+
  * __{a,b} ⊆ 2^{a,b,{a,b}}__
  -> falsch, weil Element a,b nicht rechts als Element vorkommt
 
@@ -52,11 +55,20 @@ __Alphabet:__ Jede nicht leere Menge (>= 1 Symbole)
 
 ## 3. Wahr oder falsch. Begründung?
 #### $$ \forall L_1,L_2,L_3: (L_1 L_2) L_3 = L_1 ( L_2 L_3) $$
--> wahr, Assoziativität
+-> wahr, Assoziativität - Beweis gefordert
+
+Assoziativität für Wörter vorrausgesetzt: (uv)w = u(vw)
+
+$$ x \in (L_1 L_2) L_3$$
+$$ x = vw, v \in L_1*L_2, w \in L_3 = $$
+$$ = (v_1 v_2) w, v_1 \in L_1, v_2 \in L_2, w \in L_3 = $$
+da Assoziativität für Wörter vorrausgesetzt: (uv)w = u(vw)
+$$ = v_1 (v_2 w), v_1 \in L_1, v_2 \in L_2, w \in L_3 $$
+$$ v_1 (v_2 w) \in L_1(L_2 L_3) $$
 
 ---
 #### $$ \forall L_1,L_2,L_3: (L_1 \cup L_2) L_3 = (L_1 L_3) \cup (L_2 L_3) $$
--> wahr, Distributivität
+-> wahr, Distributivität - Beweis gefordert
 
 ---
 #### $$ \forall L_1,L_2,L_3: (L_1 \cap L_2) L_3 = L_1 * L_3 \cap L_2 * L_3 $$
@@ -120,22 +132,47 @@ $$ L^* = L^+ \cup \varepsilon $$
 ---
 ## 5.
  * ∀L1,L2 :(L1L2)∗ =L∗1L∗2
- *
+ -> falsch,
+ Gegenbeispiel:
+ L_1 = a
+ L_2 = b
+ $$(\{a,b\})* \neq \{a\}* \{b\}* $$
+
  * ∀L1,L2 :(L1∪L2)∗ =(L2∪L1)∗
--> wahr, da kommutativ
 
- * ∀L1,L2 :(L1∪L2)∗ =L∗1∪L∗2
+-> wahr, kommutiert unterm STern:
+$$A \cup B = B \cup A$$
+
+---
+ #### $$ \forall L1,L2 :(L_1 \cup L_2)^* =L_1^* \cup L_2^*$$
 -> falsch
+ * links mehr wörter als rechts
+ * rechts teilmenge von links
+ * Beispiel: $L_1 = \{a\} L_2 = \{b\}$
+(L1∪L2)∗ ab möglich
+in L∗1∪L∗2 nicht möglich
 
+---
  * ∀L1,L2 :L∗1∩L∗2 =(L1∩L2)∗
 -> falsch
 
-## 6.
-### a) {w ∈ {a,b}∗ | genau ein Suffix von w beginnt mit a}
-Alle Wörter können gebildet werden.
+Gegenbeispiel: $L_1 = \{a\} L_2 = \{aa\}$
+$$ (L_1 \cap L_2)^* = \emptyset $$
+$$L_1^* \cap L_2^* = \{aa\}^*$$
 
-aa gilt nicht weil Unentscheidbar
+---
+
+---
+## 6.
+### a) $\{ w \in \{a,b\}^* $ | genau ein Suffix von w beginnt mit a$ \}$
+Die Wörter der Sprache bestehen aus den Symbolen a, b und dem leeren Wort, wobei der Suffix mit dem Symbol a beginnen muss.
+
+(Das Wort enthält einem a.
+aa gilt nicht weil Unentscheidbar)
 
 ### b) {w ∈ {a,b}∗ | alle Präfixe von w mit Länge mindestens 1 enden mit b}
-Jedes Wort mit Präfix (ungleich ε) enthält ein b
-beim Vorkommen von einem a ist keine Eindeutigkeit vorhanden
+Die Wörter der Sprache bestehen aus den Symbolen a, b und dem leeren Wort. Sobald ein Präfix mindestens die Länge 1 hat endet es mit dem Symbol b.
+
+(Jedes Wort mit Präfix (ungleich ε) enthält ein b
+beim Vorkommen von einem a ist keine Eindeutigkeit vorhanden)
+$\{b\}^*$
