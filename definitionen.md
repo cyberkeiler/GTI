@@ -1,5 +1,6 @@
 # Definitionen
 ### Symbole
+Elemente eines Alphabets
 
 ### Alphabet
 Nichtleere, endliche Menge von Symbolen
