@@ -1,14 +1,14 @@
 # Übung 1
 ## 1. Welche Behauptungen über Mengen sind wahr/falsch? Begründung?
 
- * __Ø ⊆ Ø__ 
+ * __Ø ⊆ Ø__
 -> wahr, weil beide kein Elemente haben (also jedes Element kommt in beiden vor)
 Ø ist Teilmenge jeder Mengr
 
  * __Ø ∈ Ø__
 -> falsch, weil leere Menge enthält keine Elemente
 
- * __Ø ∈ { Ø }__ 
+ * __Ø ∈ { Ø }__
  -> wahr,  *{}* ∈ {*{}*} Menge enthält {} als Element
 
  * __Ø ⊆ { Ø }__
@@ -50,7 +50,7 @@ __Alphabet:__ Jede nicht leere Menge (>= 1 Symbole)
 
 
 
-## 3. 
+## 3.
 * __∀ L1,L2,L3 : (L1L2)L3 = L1(L2L3)__
 -> wahr, Assoziativität
 
@@ -62,13 +62,13 @@ __Alphabet:__ Jede nicht leere Menge (>= 1 Symbole)
 
 * __∀ L1,L2,L3 : (L1L2)∪L3 = (L1 ∪L3)(L2 ∪L3)__
 -> falsch, Konkatenation nicht kommutativ:
- 
+
 ## 4.
  * __{ε}^*=Ø__
  -> falsch
 
 * __Ø∪Ø∗={ε}__
-* 
+*
 
 * __∀L:(L^+)^*=L^*__
 -> wahr, da Kleene Star Abschluss. L^+ ohne ε mit ^* wieder mit ε (= ε in beiden enthalten)
@@ -81,13 +81,13 @@ __Alphabet:__ Jede nicht leere Menge (>= 1 Symbole)
 
 * __∀L:0/∪L^+=L^∗__
 -> flasch, leere Menge != leeres Wort ε
- 
+
 ## 5.
  * ∀L1,L2 :(L1L2)∗ =L∗1L∗2
- * 
+ *
  * ∀L1,L2 :(L1∪L2)∗ =(L2∪L1)∗
--> wahr, da kommutativ 
- 
+-> wahr, da kommutativ
+
  * ∀L1,L2 :(L1∪L2)∗ =L∗1∪L∗2
 -> falsch
 
