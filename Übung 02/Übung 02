@@ -13,6 +13,7 @@ Induktionsvoraussetzung auf die ersten n dieser Tiere an, so erhalten wir, dass
  schließen, dass auch diese Tiere alle Elefanten sind. Also sind alle $T1, . . . ,T_{n+1}$,
  auch die Fliege, Elefanten. Oder etwa nicht? Wo liegt der Fehler?
 
+---
 ## Aufgabe 2:
 * (a) Seien A und B Mengen. $B^A$ bezeichne die Menge aller Funktionen von A nach B.
 Geben Sie eine ” natürliche Bijektion“ zwischen ${0,1}^A$, also der Menge aller
@@ -21,6 +22,7 @@ Funktionen von A nach {0,1}, und $2^A$, also der Potenzmenge von A, an.
 True fundamentalists would see the ordered pair (a,b) not as a new kind of object,
 but as identical to $\{a,\{a,b\}\}$.
 
+---
 ## Aufgabe 3:
 * (a) Geben Sie eine Relation an, die reﬂexiv und symmetrisch ist, aber nicht transitiv.
 
@@ -31,17 +33,21 @@ but as identical to $\{a,\{a,b\}\}$.
 * (d) Bestimmen Sie die reﬂexive transitive Hülle $R^*$ der Relation $R = \{(a,b),(a,c),(a,d),(d,c),(d,e)\}$.
 Zeichnen Sie die Darstellung von R als gerichteter Graph. Ebenso für $R^*$.
 
+---
 ## Aufgabe 4:
 Sei A eine endliche Menge. Zeigen Sie $|2A| = 2|A|$.
 
+---
 ## Aufgabe 5:
 Beweisen oder widerlegen Sie: $\forall L1,L2 : (L1L2 \cup L1)^* = L1(L2L1 \cup L1)^*$
 
+---
 ## Aufgabe 6:
 * (a) Beweisen Sie, dass die Menge der Wörter über einem Alphabet abzählbar unendlich ist.
 
 * (b) Beweisen Sie, dass die Menge der Sprachen über einem Alphabet überabzählbar unendlich ist.
 
+---
 ## Aufgabe 7:
 Sei $\sum = \{a,b\}$ und sei L induktiv wie folgt deﬁniert:
 * (1) ε gehört zu L.
@@ -50,5 +56,6 @@ Sei $\sum = \{a,b\}$ und sei L induktiv wie folgt deﬁniert:
 * (4) Falls x ∈ L und y ∈ L, dann gehört auch xy zu L.
 Zeigen Sie, dass alle Wörter in L gleichviele a and b enthalten.
 
+---
 ## Aufgabe 8:
 Beweisen Sie: Jeder ungerichtete Graph mit mehr als einem Knoten besitzt zwei Knoten vom gleichen Grad.
