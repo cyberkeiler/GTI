@@ -34,19 +34,35 @@ Transitivität:
 $\forall a,b,c \in A:aRb \land bRc \Rightarrow aRc$
 
 * a) Geben Sie eine Relation an, die reﬂexiv und symmetrisch ist, aber nicht transitiv.
+
  $R=\{(a,a),(b,b),(c,c),(a,b)(b,a)(b,c)(c,b)\}$
- [/Relation01.jpg]
- ![Relation01](/Relation01.jpg)
+ ![Relation01](Relation01.jpg)
+
 * b) Geben Sie eine Relation an, die reﬂexiv und transitiv ist, aber nicht symmetrisch.
 
+ $R=\{(a,a),(b,b),(c,c),(ab)(bc)(ac)\}$
+
+ ![Relation01](Relation02.jpg)
+
 * c) Geben Sie eine Relation an, die symmetrisch und transitiv ist, aber nicht reﬂexiv.
+
+ $R=\{(a,b),(b,a),(b,c),(cb)(ac)(ca)\}$
+
+ ![Relation01](Relation03.jpg)
 
 * (d) Bestimmen Sie die reﬂexive transitive Hülle $R^*$ der Relation $R = \{(a,b),(a,c),(a,d),(d,c),(d,e)\}$.
 Zeichnen Sie die Darstellung von R als gerichteter Graph. Ebenso für $R^*$.
 
+ $R=\{(a,b),(a,c),(a,d),(d,c),(d,e)\}$
+
+ ![Relation01](Relation04.jpg)
+
+ $R=\{(a,a),(b,b),(c,c),(d,d),(e,e),(a,b),(a,c),(a,d),(d,c),(d,e)\}$
+ ![Relation01](Relation05.jpg)
+
 ---
 ## Aufgabe 4:
-Sei A eine endliche Menge. Zeigen Sie $|2A| = 2|A|$.
+Sei A eine endliche Menge. Zeigen Sie $|2^A| = 2^{|A|}$.
 
 ---
 ## Aufgabe 5:
