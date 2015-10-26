@@ -24,11 +24,22 @@ but as identical to $\{a,\{a,b\}\}$.
 
 ---
 ## Aufgabe 3:
-* (a) Geben Sie eine Relation an, die reﬂexiv und symmetrisch ist, aber nicht transitiv.
+Refelxiv:
+$\forall a \in A:(a,a) \in R$
 
-* (b) Geben Sie eine Relation an, die reﬂexiv und transitiv ist, aber nicht symmetrisch.
+Symmetrie:
+$\forall a,b \in A:(a,b)\in R \Rightarrow (b,a)\in R$
 
-* (c) Geben Sie eine Relation an, die symmetrisch und transitiv ist, aber nicht reﬂexiv.
+Transitivität:
+$\forall a,b,c \in A:aRb \land bRc \Rightarrow aRc$
+
+* a) Geben Sie eine Relation an, die reﬂexiv und symmetrisch ist, aber nicht transitiv.
+ $R=\{(a,a),(b,b),(c,c),(a,b)(b,a)(b,c)(c,b)\}$
+ [/Relation01.jpg]
+ ![Relation01](/Relation01.jpg)
+* b) Geben Sie eine Relation an, die reﬂexiv und transitiv ist, aber nicht symmetrisch.
+
+* c) Geben Sie eine Relation an, die symmetrisch und transitiv ist, aber nicht reﬂexiv.
 
 * (d) Bestimmen Sie die reﬂexive transitive Hülle $R^*$ der Relation $R = \{(a,b),(a,c),(a,d),(d,c),(d,e)\}$.
 Zeichnen Sie die Darstellung von R als gerichteter Graph. Ebenso für $R^*$.
