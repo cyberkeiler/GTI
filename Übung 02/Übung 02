@@ -68,6 +68,18 @@ Sei A eine endliche Menge. Zeigen Sie $|2^A| = 2^{|A|}$.
 ## Aufgabe 5:
 Beweisen oder widerlegen Sie: $\forall L1,L2 : (L1L2 \cup L1)^* = L1(L2L1 \cup L1)^*$
 
+Gegenbeispiel:
+
+  $\begin{matrix}
+ L_1=\{a\}     & L_2=\{b\}     \\
+ L_1L_2=\{ab\} & L_2L_1=\{ba\} \\
+ L_1L_2\cup L_1=\{a,ab\} & L_2L_1\cup L_1=\{a,ba\} \\
+ (L_1L_2\cup L_1)^*=\{\varepsilon , a, ab, ...\} & (L_2L_1\cup L_1)^*=\{\varepsilon , a, ba, ...\} \\
+  & L_1(L_2L_1\cup L_1)^*=\{a, ba, ...\}
+ \end{matrix}$
+
+ $\Rightarrow (L1L2 \cup L1)^* \neq L1(L2L1 \cup L1)^*$
+
 ---
 ## Aufgabe 6:
 * (a) Beweisen Sie, dass die Menge der Wörter über einem Alphabet abzählbar unendlich ist.
