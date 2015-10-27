@@ -13,6 +13,13 @@ Induktionsvoraussetzung auf die ersten n dieser Tiere an, so erhalten wir, dass
  schließen, dass auch diese Tiere alle Elefanten sind. Also sind alle $T1, . . . ,T_{n+1}$,
  auch die Fliege, Elefanten. Oder etwa nicht? Wo liegt der Fehler?
 
+ Im Fall n+1=2 kann man den Elefanten zwar so stellen, daß er bei den ersten n=1 Tieren steht. Folglich sind alle Tiere unter den ersten n=1 Tieren Elefanten. Aber deshalb befinden sich unter
+den "letzten" n Tieren nicht notwendig Elefanten.
+
+Der Induktionsschluß funktioniert nur für n>1, denn nur dann können aus einem Elefanten zwei (oder mehr) werden und ist damit auch ein Elefant unter den letzten n Tieren.
+Die Induktionsvoraussetzung war aber gezeigt für n=1.
+Man müßte also zunächst zeigen, daß von zwei Tieren, von denen eines ein Elefant ist, auch das andere ein Elefant ist. Aber das wird schwer. 
+
 ---
 ## Aufgabe 2:
 * (a) Seien A und B Mengen. $B^A$ bezeichne die Menge aller Funktionen von A nach B.
