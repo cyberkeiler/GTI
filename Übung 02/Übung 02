@@ -18,7 +18,7 @@ den "letzten" n Tieren nicht notwendig Elefanten.
 
 Der Induktionsschluß funktioniert nur für n>1, denn nur dann können aus einem Elefanten zwei (oder mehr) werden und ist damit auch ein Elefant unter den letzten n Tieren.
 Die Induktionsvoraussetzung war aber gezeigt für n=1.
-Man müßte also zunächst zeigen, daß von zwei Tieren, von denen eines ein Elefant ist, auch das andere ein Elefant ist. Aber das wird schwer. 
+Man müßte also zunächst zeigen, daß von zwei Tieren, von denen eines ein Elefant ist, auch das andere ein Elefant ist. Aber das wird schwer.
 
 ---
 ## Aufgabe 2:
@@ -100,8 +100,26 @@ Sei $\sum = \{a,b\}$ und sei L induktiv wie folgt deﬁniert:
 * (2) Falls x ∈ L ist, dann gehört auch axb zu L.
 * (3) Falls x ∈ L ist, dann gehört auch bxa zu L.
 * (4) Falls x ∈ L und y ∈ L, dann gehört auch xy zu L.
+
 Zeigen Sie, dass alle Wörter in L gleichviele a and b enthalten.
+
+Beweis durch struktuelle Induktion:
+
+IA: $ \varepsilon \in L, |\varepsilon|_a=|\varepsilon|_b=0$
+
+IV: $x,y \in L, |x|_a=|x|_b, |y|_a=|y|_b$
+
+IB:
+* 1) $axb \in L, |axb|_a=|axb|_b, \text{da } w=axb$
+
+ $|w|_a=|axb|_a=1+|x|_a=1+|x|_b=(\text{laut IV})|axb|_b=|w|_b$
+
+* 2) $bxa \in L, |bxa|_a=|bxa|_b \rightarrow \text{analog zu 1)}$
+* 3) $xy \in L, |xy|_a=|xy|_b$
+
+ $|xy|_a=|x|_a+|y|_a=(\text{laut IV})|x|_b+|y|_b=|xy|_b$
 
 ---
 ## Aufgabe 8:
 Beweisen Sie: Jeder ungerichtete Graph mit mehr als einem Knoten besitzt zwei Knoten vom gleichen Grad.
+![Lösung](Lsg_Aufg08.pdf)
