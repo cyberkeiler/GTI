@@ -45,12 +45,12 @@ ist hier die Untermenge gemeint? also dass (a,b) eine untermenge von (a,(a,b)) d
 
 * **a) Geben Sie eine Relation an, die reﬂexiv und symmetrisch ist, aber nicht transitiv.**
 
- $R=\{(a,a),(b,b),(c,c),(a,b)(b,a)(b,c)(c,b)\}$
+ $R=\{(a,a),(b,b),(c,c),(a,b),(b,a),(b,c),(c,b)\}$
  ![Relation01](Relation01.jpg)
 
 * **b) Geben Sie eine Relation an, die reﬂexiv und transitiv ist, aber nicht symmetrisch.**
 
- $R=\{(a,a),(b,b),(c,c),(ab)(bc)(ac)\}$
+ $R=\{(a,a),(b,b),(c,c),(a,b),(b,c),(a,c)\}$
 
  ![Relation01](Relation02.jpg)
 
@@ -58,7 +58,7 @@ ist hier die Untermenge gemeint? also dass (a,b) eine untermenge von (a,(a,b)) d
 
 * **c) Geben Sie eine Relation an, die symmetrisch und transitiv ist, aber nicht reﬂexiv.**
 
- $R=\{(a,b),(b,a),(b,c),(cb)(ac)(ca)\}$
+ $R=\{(a,b),(b,a),(b,c),(c,b),(a,c),(c,a)\}$
 
  ![Relation01](Relation03.jpg)
 
@@ -69,7 +69,9 @@ ist hier die Untermenge gemeint? also dass (a,b) eine untermenge von (a,(a,b)) d
 
  ![Relation01](Relation04.jpg)
 
+
  $R^*=\{(a,a),(b,b),(c,c),(d,d),(e,e),(a,b),(a,c),(a,d),(a,e),(d,c),(d,e)\}$
+ 
  ![Relation01](Relation05.jpg)
 
   *[@belkinot]  was ist mit a,e ?*
