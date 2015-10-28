@@ -29,6 +29,8 @@ Funktionen von A nach {0,1}, und $2^A$, also der Potenzmenge von A, an.
 True fundamentalists would see the ordered pair (a,b) not as a new kind of object,
 but as identical to $\{a,\{a,b\}\}$.
 
+ist hier die Untermenge gemeint? also dass (a,b) eine untermenge von (a,(a,b)) darstellt? für teil a hilft vllt cantorsche Paarungsfunktion?
+
 ---
 ## Aufgabe 3:
 Refelxiv:
@@ -101,7 +103,16 @@ Gegenbeispiel:
       
       
 * (b) Beweisen Sie, dass die Menge der Sprachen über einem Alphabet überabzählbar unendlich ist.
-
+      Siehe R zu N ist überabzählbar, Cantorsches Verfahren/Diagonalverfahren.
+      Alle Zahlen zwischen 0 und 1 aufschreiben, dann bei der n-ten zahl die n-te nachkommastelle nichit übereinstimmen --> neue Zahl geschaffen
+      Bsp:
+      Zahl 1    0,5324
+      Zahl 2    0,4356
+      Zahl 3    0.8432
+      Zahl 4    0.9342
+      
+      Neue Zahl: 0,4218 (4 ungleich 5, 2 ungleich 3, 1 ungleich 3 und 8 ungleich 2) 
+      http://www.mathe-online.at/mathint/zahlen/i_Rueberabz.html
 ---
 ## Aufgabe 7:
 Sei $\sum = \{a,b\}$ und sei L induktiv wie folgt deﬁniert:
