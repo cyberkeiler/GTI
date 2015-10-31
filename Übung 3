@@ -1,0 +1,12 @@
+Aufgabe 1
+Gegenbeispiel, wenn L3 die Leere Menge ist?
+
+Aufgabe 2:
+a) M_1  q1,q2,q3,q1,q1 
+   M_2  q1, q1, q2, q4
+
+b) M_1 Nein, kein landen in q1 - kein endzustand
+   M_2 Ja, landen in gültigem Endzustand q4
+
+c) Nur bei M2 da q1 endzustand?
+
