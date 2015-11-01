@@ -30,26 +30,38 @@ Beantworten Sie die folgenden Fragen für jeden der beiden Automaten:
 
 ## Aufgabe 4:
 Geben Sie deterministische endliche Automaten an, die die folgenden Sprachen akzeptieren:
- * a) $\{w \in \{a,b\}^* | w \text{beginnt mit aba]\}$
- * b) $\{w \in \{a,b\}^* | w \text{enthaelt genau zwei a}\}$
+ * a) $\{w \in \{a,b\}^* | w \text{ beginnt mit aba}\}$
+ ![Automat](Automat_4a.jpg)
+
+ * b) $\{w \in \{a,b\}^* |w \text{ enthaelt genau 2 a}\}$
+  ![Automat](Automat_4b.jpg)
 
 ---
 
 ## Aufgabe 5:
 Geben Sie deterministische endliche Automaten an, die die folgenden Sprachen akzeptieren:
- * a) $\{w \in \{a,b\}^* | \txt{in w folgt auf jedes a unmittelbar ein b}\}$
- * b) $\{w \ \{a,b\}^* | w \text{enthaelt das Teilwort aabab}\}$
+ * a) $\{w \in \{a,b\}^* | \text{ in w folgt auf jedes a unmittelbar ein b}\}$
+  ![Automat](Automat_5a.jpg)
+
+ * b) $\{w \in \{a,b\}^* | w \text{ enthaelt das Teilwort aabab}\}$
+ ![Automat](Automat_5b.jpg)
 
  ---
 
 ## Aufgabe 6:
 Geben Sie jeweils (nichtdeterministische) endliche Automaten an, die die folgenden Sprachen akzeptieren:
- * a) $\{w \in \{a,b\}^* | w \text{beginnt mit b und endet mit a}\}$
- * b) $\{w \in \{0,7\}^* | w \text{enthaelt das Teilwort 007}\}$
+ * a) $\{w \in \{a,b\}^* | w \text{ beginnt mit b und endet mit a}\}$
+  ![Automat](Automat_6a.jpg)
+
+ * b) $\{w \in \{0,7\}^* | w \text{ enthaelt das Teilwort 007}\}$
+ ![Automat](Automat_6b.jpg)
 
  ---
 
 ## Aufgabe 7:
 Geben Sie jeweils (nichtdeterministische) endliche Automaten an, die die folgenden Sprachen akzeptieren:
- * a) $\{w \in \{a,b\}^* | |w| \leq 3}
- * b) $\{w \in \{a,b\}^* | \text{an jeder ungeraden Position in w steht ein b}\}$
+
+ * a) $\{w \in \{a,b\}^* | |w| \leq 3\}$
+  ![Automat](Automat_7a.jpg)
+ * b) $\{w \in \{a,b\}^* | w \text{an jeder ungeraden Position in w steht ein b}\}$
+  ![Automat](Automat_7b.jpg)
