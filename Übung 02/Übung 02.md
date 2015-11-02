@@ -81,6 +81,14 @@ ist hier die Untermenge gemeint? also dass (a,b) eine untermenge von (a,(a,b)) d
 ---
 ## Aufgabe 4:
 **Sei A eine endliche Menge. Zeigen Sie $|2^A| = 2^{|A|}$.**
+<<<<<<< Updated upstream:Übung 02/Übung 02.md
+=======
+
+$|A|=n \text{Anz. der Elemente}$
+$\begin{pmatrix}
+
+\end{pmatrix}$
+>>>>>>> Stashed changes:Übung 02/Übung 02.md
 
 ---
 ## Aufgabe 5:
@@ -114,7 +122,15 @@ Gegenbeispiel:
 
 
 
+<<<<<<< Updated upstream:Übung 02/Übung 02.md
 * **(b) Beweisen Sie, dass die Menge der Sprachen über einem Alphabet überabzählbar unendlich ist.**
+=======
+<<<<<<< HEAD:Übung 02/Übung 02
+* (b) Beweisen Sie, dass die Menge der Sprachen über einem Alphabet überabzählbar unendlich ist.
+=======
+* **(b) Beweisen Sie, dass die Menge der Sprachen über einem Alphabet überabzählbar unendlich ist.**
+>>>>>>> origin/master:Übung 02/Übung 02.md
+>>>>>>> Stashed changes:Übung 02/Übung 02.md
       Siehe R zu N ist überabzählbar, Cantorsches Verfahren/Diagonalverfahren.
       Alle Zahlen zwischen 0 und 1 aufschreiben, dann bei der n-ten zahl die n-te nachkommastelle nichit übereinstimmen --> neue Zahl geschaffen
       Bsp:
