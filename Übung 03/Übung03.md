@@ -1,8 +1,8 @@
 # Übung 3
 ## Aufgabe 1:
-Beweisen oder widerlegen Sie folgende Behauptung über Sprachen: $ \forall L_1,L_2,L_3 : L_1(L_2−L_3) = L_1L_2−L_1L_3$
+Beweisen oder widerlegen Sie folgende Behauptung über Sprachen: $\forall L_1 ,L_2 ,L_3 :L_1 (L_2 − L_3 ) = L_1 L_2 − L_1 L_3 $
 
-Gegenbeisiel: $L_1={a}; L_2={b}; L_3={}$
+Gegenbeisiel: $L_1=\{a\}; L_2=\{b\}; L_3=\{\}$
 
 ---
 
@@ -62,6 +62,7 @@ Geben Sie jeweils (nichtdeterministische) endliche Automaten an, die die folgend
 Geben Sie jeweils (nichtdeterministische) endliche Automaten an, die die folgenden Sprachen akzeptieren:
 
  * a) $\{w \in \{a,b\}^* | |w| \leq 3\}$
+
   ![Automat](Automat_7a.jpg)
  * b) $\{w \in \{a,b\}^* | w \text{an jeder ungeraden Position in w steht ein b}\}$
   ![Automat](Automat_7b.jpg)
