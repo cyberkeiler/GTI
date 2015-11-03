@@ -2,7 +2,7 @@
 ## Aufgabe 1:
 **Beweisen oder widerlegen Sie folgende Behauptung über Sprachen: $ \forall L_1, L_2, L_3: L_1 (L_2 - L_3) = L_1 L_2-L_1 L_3$ **
 
-Gegenbeispiel: $L_1=\{a\}; L_2=\{b\}; L_3=\{\}$
+Gegenbeispiel: $L_1=\{b,bb\}; L_2=\{a,ba\}; L_3=\{a\}$
 
 ---
 
