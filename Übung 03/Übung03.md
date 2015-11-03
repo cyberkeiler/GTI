@@ -2,7 +2,8 @@
 ## Aufgabe 1:
 Beweisen oder widerlegen Sie folgende Behauptung über Sprachen: $\forall L_1,L_2,L_3:L1(L_2-L_3)=L_1L_2-L_1L_3$
 
-Gegenbeisiel: 
+Gegenbeisiel:
+
 $L_1=\{b,bb\}; L_2=\{a,ba\}; L_3=\{a\}$
 
 $L_1\{ba\}=\{ba,bba,bba,bbba\}-\{ba,bba\}$
