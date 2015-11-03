@@ -1,30 +1,32 @@
 # Übung 3
 ## Aufgabe 1:
-Beweisen oder widerlegen Sie folgende Behauptung über Sprachen: $\forall L_1,L_2,L_3:L1(L_2-L_3)=L_1L_2-L_1L_3$
+**Beweisen oder widerlegen Sie folgende Behauptung über Sprachen: $ \forall L_1, L_2, L_3: L_1 (L_2 - L_3) = L_1 L_2-L_1 L_3$ **
 
-Gegenbeisiel:
-
-$L_1=\{b,bb\}; L_2=\{a,ba\}; L_3=\{a\}$
-
-$L_1\{ba\}=\{ba,bba,bba,bbba\}-\{ba,bba\}$
-
-$\{bba,bbba\}\neq \{bbba\}$
+Gegenbeispiel: $L_1=\{a\}; L_2=\{b\}; L_3=\{\}$
 
 ---
 
 ## Aufgabe 2:
-Gegeben seien die folgenden Zustandsübergangsdiagramme endlicher Automaten M1 und M2:
+**Gegeben seien die folgenden Zustandsübergangsdiagramme endlicher Automaten M1 und M2:
 ![img](img01.jpg)
 Geben Sie formale Beschreibungen der Automaten M1 und M2 an.
-Beantworten Sie die folgenden Fragen für jeden der beiden Automaten:
-* a) Was ist die Folge der Zustände, die bei Eingabe aabb erreicht werden?
- $M_1:q1\rightarrow q2\rightarrow q3\rightarrow q1\rightarrow q1$
- M_2:q1\rightarrow q1\rightarrow q2\rightarrow q4
-* b) Wird das Wort aabb akzeptiert?
- $M_1$ Nein, kein landen in q1 - kein endzustand
- $M_2$ Ja, landen in gültigem Endzustand q4
-* c) Wird das leere Wort e akzeptiert?
- Nur bei $M_2$ da q1 endzustand?
+Beantworten Sie die folgenden Fragen für jeden der beiden Automaten:**
+
+* **a) Was ist die Folge der Zustände, die bei Eingabe aabb erreicht werden?**
+
+ $M_1:q1\rightarrow q2 \rightarrow q3 \rightarrow q1\rightarrow q1$
+
+ $M_2:q1\rightarrow q1\rightarrow q1\rightarrow q2\rightarrow q4$
+
+* **b) Wird das Wort aabb akzeptiert?**
+
+ $M_1$ Nein, $q2$ ist kein Endzustand
+
+ $M_2$ Ja, $q4$ ist gültiger Endzustand
+
+* **c) Wird das leere Wort $\epsilon$ akzeptiert?**
+
+ Nur bei $M_2$ da Startzustand $q1$ auch Endzustand
 
  ---
 
@@ -68,7 +70,6 @@ Geben Sie jeweils (nichtdeterministische) endliche Automaten an, die die folgend
 Geben Sie jeweils (nichtdeterministische) endliche Automaten an, die die folgenden Sprachen akzeptieren:
 
  * a) $\{w \in \{a,b\}^* | |w| \leq 3\}$
-
   ![Automat](Automat_7a.jpg)
  * b) $\{w \in \{a,b\}^* | w \text{an jeder ungeraden Position in w steht ein b}\}$
   ![Automat](Automat_7b.jpg)
