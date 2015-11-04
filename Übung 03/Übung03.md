@@ -4,7 +4,7 @@
 
 Gegenbeispiel: $L_1=\{b,bb\}; L_2=\{a,ba\}; L_3=\{a\}$
 
-$$\{b,bb\} \{ba\} \neq \{ba,bba,bba,bbba\} - \{ba,bba\}$$
+$$\{b,bb\} \{ba\} \neq \{ba,bba,bbba\} - \{ba,bba\}$$
 $$\{bba,bbba\} \neq \{bbba\}$$
 
 ---
@@ -23,11 +23,13 @@ Beantworten Sie die folgenden Fragen für jeden der beiden Automaten:**
 * $s$ - Startzustand ($s \in K$)
 * $\vdash$ "überführt "
 
-allg.: $M = (K, \sum, \delta, s, F  )$
+**allg.: $M = (K, \sum, \delta, s, F  )$**
 
-$M_1 = \{K_1, \sum, \delta_1, q_1, \{q_2\} \}$
+$M_1 = \{K_1, \sum, \delta_1, q_1, F_1 \}$
 
 $K_1 = \{q_1, q_2, q_3\}$
+
+$F_1 = \{q_2\}$
 
 $\sum = \{a,b\}$
 
@@ -38,6 +40,26 @@ $\sum = \{a,b\}$
 | $q_1$ | |$q_2$ | $q_1$ |
 | $q_2$ | |$q_3$ | $q_3$ |
 | $q_3$ || $q_2$ | $q_1$ |
+
+
+$M_2 = \{K_2, \sum, \delta_2, s, F_2 \}$
+
+$K_2 = \{q_1, q_2, q_3, q_4\}$
+
+$s = q_1$
+
+$F_2 = \{q_1, q_4\}$
+
+$\sum = \{a,b\}$
+
+**Überführungsfunktion $\delta_2$**
+
+| $\delta_2$ | | a | b |
+| --- | --- | :---: | :---: |
+| $q_1$ | |$q_1$ | $q_2$ |
+| $q_2$ | |$q_3$ | $q_4$ |
+| $q_3$ || $q_2$ | $q_1$ |
+| $q_4$ || $q_3$ | $q_4$ |
 
 * **a) Was ist die Folge der Zustände, die bei Eingabe aabb erreicht werden?**
 
@@ -50,7 +72,13 @@ $\sum = \{a,b\}$
 
  $\rightarrow$ nicht akzeptiert, da $q_1 \notin F$
 
- $M_2:q1\rightarrow q1\rightarrow q1\rightarrow q2\rightarrow q4$
+
+ $M_2:(q1,aabb) \vdash_{M2} (q1, abb))$
+ $\vdash_{M2} (q1, bb))$
+ $\vdash_{M2} (q2, b))$
+  $\vdash_{M2} (q4, \epsilon))$
+
+ $\rightarrow$ akzeptiert, da $q_4 \in F_2$
 
 * **b) Wird das Wort aabb akzeptiert?**
 
