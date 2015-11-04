@@ -4,8 +4,10 @@
 
 Gegenbeispiel: $L_1=\{b,bb\}; L_2=\{a,ba\}; L_3=\{a\}$
 
----
+$$\{b,bb\} \{ba\} \neq \{ba,bba,bba,bbba\} - \{ba,bba\}$$
+$$\{bba,bbba\} \neq \{bbba\}$$
 
+---
 ## Aufgabe 2:
 **Gegeben seien die folgenden Zustandsübergangsdiagramme endlicher Automaten M1 und M2:
 ![img](img01.jpg)
