@@ -14,17 +14,49 @@ $$\{bba,bbba\} \neq \{bbba\}$$
 Geben Sie formale Beschreibungen der Automaten M1 und M2 an.
 Beantworten Sie die folgenden Fragen für jeden der beiden Automaten:**
 
+* $M$ - Automat
+* $K$ - Menge der Zustände
+* $F$ - Menge Endzustände ($F \subseteq K$)
+* $\sum$ - Alphabet (nicht leere, engliche Menge von Zeichen)
+* $L$ - Sprache (Menge der Wörter)
+* $\delta$ - Überführungsfunktion
+* $s$ - Startzustand ($s \in K$)
+* $\vdash$ "überführt "
+
+allg.: $M = (K, \sum, \delta, s, F  )$
+
+$M_1 = \{K_1, \sum, \delta_1, q_1, \{q_2\} \}$
+
+$K_1 = \{q_1, q_2, q_3\}$
+
+$\sum = \{a,b\}$
+
+**Überführungsfunktion $\delta_1$**
+
+| $\delta_1$ | | a | b |
+| --- | --- | :---: | :---: |
+| $q_1$ | |$q_2$ | $q_1$ |
+| $q_2$ | |$q_3$ | $q_3$ |
+| $q_3$ || $q_2$ | $q_1$ |
+
 * **a) Was ist die Folge der Zustände, die bei Eingabe aabb erreicht werden?**
 
- $M_1:q1\rightarrow q2 \rightarrow q3 \rightarrow q1\rightarrow q1$
+
+
+ $M_1:(q1,aabb) \vdash_{M1} (q2, abb))$
+ $\vdash_{M1} (q3, bb))$
+ $\vdash_{M1} (q1, b))$
+  $\vdash_{M1} (q1, \epsilon))$
+
+ $\rightarrow$ nicht akzeptiert, da $q_1 \notin F$
 
  $M_2:q1\rightarrow q1\rightarrow q1\rightarrow q2\rightarrow q4$
 
 * **b) Wird das Wort aabb akzeptiert?**
 
- $M_1$ Nein, $q2$ ist kein Endzustand
+ $M_1:$ Nein, $q_1 \notin F$
 
- $M_2$ Ja, $q4$ ist gültiger Endzustand
+ $M_2:$ Ja, $q_4 \in F$
 
 * **c) Wird das leere Wort $\epsilon$ akzeptiert?**
 
@@ -59,7 +91,9 @@ Geben Sie deterministische endliche Automaten an, die die folgenden Sprachen akz
  ---
 
 ## Aufgabe 6:
-Geben Sie jeweils (nichtdeterministische) endliche Automaten an, die die folgenden Sprachen akzeptieren:
+**Geben Sie jeweils (nichtdeterministische) endliche Automaten an, die die folgenden Sprachen akzeptieren:**
+
+*Unterschied zur deterministischem Automaten: Statt $\delta$ Überführungsfunktion ist's eine Überführungsrelation.*
  * a) $\{w \in \{a,b\}^* | w \text{ beginnt mit b und endet mit a}\}$
   ![Automat](Automat_6a.jpg)
 
