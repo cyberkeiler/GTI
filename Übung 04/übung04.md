@@ -38,21 +38,43 @@
 
  $L(((a \cup b \cup c)^* ab (a \cup b \cup c)^* ))$
 
+ $= L((a \cup b \cup c)^* ))L(ab)L((a \cup b \cup c)^* ))$
+
+ $= L((a \cup b \cup c)^* ))\{ab\}L((a \cup b \cup c)^* ))$
+
+ $= (L(a) \cup L(b) \cup L(c))^* )\{ab\}(L(a) \cup L(b) \cup L(c))^* )$
+
+ $= (\{a\} \cup \{b\} \cup \{c\})^* \{ab\}(\{a\} \cup \{b\} \cup \{c\})^* $
+
+ $= \{a,b,c\}^* \{ab\} \{a,b,c\}^* $
+
 ---
 ## Aufgabe 5:
 **Sei $\Sigma = \{a,b\}$. Geben Sie reguläre Ausdrücke für die folgenden Sprachen an. Sie dürfen dabei wie in der Vorlesung angegeben Klammern einsparen.**
 
 * a) $\{ w \in \Sigma^* | \text{ das Wort bab ist ein Praefix von w}\}$
 
- $w \{bab\}\{a,b\}^* $
+ $L((bab)(a \cup b)^* )$
 
- $L(bab)L(\{a,b\}^* ) \rightarrow L(bab)L(a\lor b)^* $
+ $= L(bab)L((a \cup b)^* )$
 
- $L(bab (a \lor b)^* ) \rightarrow bab(a\lor b)^* $
+ $= \{bab\}(L(a) \cup L(b))^* $
+
+ $= \{bab\}(\{a\} \cup \{b\})^* $
+
+ $= \{bab\}\{a,b\}^* $
 
 * b) $\{ w \in \Sigma^* | w \text{ enthaelt hoestens zwei a}\}$
 
-$$
+ $L((b)^* (a) (b)^* (a) (b)^* )$
+
+ $= L((b)^* ) L(a) L((b)^* ) L(a) L((b)^* )$
+
+ $= L((b)^* ) \{a\} L((b)^* ) \{a\} L((b)^* )$
+
+ $= (L(b)^* ) \{a\} (L(b)^* ) \{a\} (L(b)^* )$
+
+ $= \{b\}^* \{a\} \{b\}^* \{a\} \{b\}^* $
 
 ---
 ## Aufgabe 6:
