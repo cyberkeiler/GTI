@@ -1,6 +1,7 @@
 # Übung 4
 ## Aufgabe 1:
 **Konstruieren Sie mit dem Verfahren aus dem Beweis der Äquivalenz von NEA und DEA zu dem nichtdeterministischen endlichen Automaten, der durch das folgende Zustandsübergangsdiagramm gegeben ist, einen äquivalenten deterministischen Automaten. Sie brauchen dabei nicht alle Zustände, die sich aus der Potenzmengenkonstruktion ergeben, zu konstruieren, sondern nur die vom Startzustand aus erreichbaren.**
+
 ![Automat](Automat01.jpg)
 
 ---
@@ -26,6 +27,13 @@
 ## Aufgabe 5:
 **Sei $\Sigma = \{a,b\}$. Geben Sie reguläre Ausdrücke für die folgenden Sprachen an. Sie dürfen dabei wie in der Vorlesung angegeben Klammern einsparen.**
 * a) $\{ w \in \Sigma^* | \text{ das Wort bab ist ein Praefix von w}\}$
+
+ $w \{bab\}\{a,b\}^* $
+
+ $L(bab)L(\{a,b\}^* ) \rightarrow L(bab)L(a\lor b)^* $
+
+ $L(bab (a \lor b)^* ) \rightarrow bab(a\lor b)^* $
+
 * b) $\{ w \in \Sigma^* | w \text{ enthaelt hoestens zwei a}\}$
 
 ---
