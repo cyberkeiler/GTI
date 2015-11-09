@@ -21,11 +21,27 @@
 ## Aufgabe 4:
 **Sei $\Sigma=\{a,b,c\}$. Geben Sie reguläre Ausdrücke für die folgenden Sprachen an. Sie dürfen dabei wie in der Vorlesung angegeben Klammern einsparen.**
 * a) $\{w \in \Sigma^* | w \text{ endet mit b}\}$
+
+ $L(((a \cup b \cup c)^* b))$
+
+ $= L((a \cup b \cup c)^* )L(b)$
+
+ $= L((a \cup b \cup c)^* )\{b\}$
+
+ $= (L(a) \cup L(b) \cup L(c))^* \{b\}$
+
+ $= (\{a\} \cup \{b\} \cup \{c\})^* \{b\}$
+
+ $= \{a,b,c\}^* \{b\}$
+
 * b) $\{ w \in \Sigma^* | w \text{ enthaelt das Teilwort ab}\}$
+
+ $L(((a \cup b \cup c)^* ab (a \cup b \cup c)^* ))$
 
 ---
 ## Aufgabe 5:
 **Sei $\Sigma = \{a,b\}$. Geben Sie reguläre Ausdrücke für die folgenden Sprachen an. Sie dürfen dabei wie in der Vorlesung angegeben Klammern einsparen.**
+
 * a) $\{ w \in \Sigma^* | \text{ das Wort bab ist ein Praefix von w}\}$
 
  $w \{bab\}\{a,b\}^* $
@@ -35,6 +51,8 @@
  $L(bab (a \lor b)^* ) \rightarrow bab(a\lor b)^* $
 
 * b) $\{ w \in \Sigma^* | w \text{ enthaelt hoestens zwei a}\}$
+
+$$
 
 ---
 ## Aufgabe 6:
