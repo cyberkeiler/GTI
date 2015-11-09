@@ -7,7 +7,10 @@
 ## Aufgabe 2:
 **Geben Sie jeweils Zustandsübergangsdiagramme (nichtdeterministischer) endlicher Automaten an, die die folgenden Sprachen akzeptieren:**
 * a) $\{w \in \{a,b\}^* | w \text{ enthaelt das Teilwort ab nicht}\}$
+![Automat](Automat02a.jpg)
+
 * b) $\{w \in \{a,b\}^* | w \text{ enthaelt das Teilwort aa oder das Teilwort bb}\}$
+![Automat](Automat02b.jpg)
 
 ---
 ## Aufgabe 3:
