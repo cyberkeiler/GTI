@@ -30,6 +30,7 @@ $NEA = (\{q_0,...,q_3\}, \{0,1\}, \Delta, q_0, \{q_3\})$
 
 * b) $\{w \in \{a,b\}^* | w \text{ enthaelt das Teilwort aa oder das Teilwort bb}\}$
 ![Automat](Automat02b.jpg)
+![Automat 2b korrigiert](https://cloud.githubusercontent.com/assets/9371903/11078817/73913d3c-8808-11e5-871c-2179d53c87ea.png)
 
 ---
 ## Aufgabe 3:
