@@ -106,6 +106,21 @@ Die einzelnen Bedingungen werden in verschiedene Automaten umgesetzt.
 ## Aufgabe 6:
 **Zeigen Sie, dass die Sprache $\{a^mb^k | m\leq k\}\subseteq \{a,b\}^*$ nicht regulär ist.**
 
+Angenommen L ist regulär, so erfüllt L die Aussage des Pumpink Lemma (für reguläre Sprachen). Es sei p die Konstante aus dem Pumping Lemma, dann ist $w=a^pb^p \in L$.
+
+Für jede Zerlegung $w=xyz$ mit $|y|\geq1$ und $|xy|<p$ so gilt $y \in \{a\}^* $.
+
+Daraus folgt aber $xy^2z=a^{p+|y|}b^p \notin L$ was in Widerspruch zur Aussage des Pumping Lemma steht.
+
+---
+Falls die Sprache regulär wäre, müsste das Pumping Lemma gelten, also:
+* $x=\varepsilon$
+* $y=a$
+* $z=bb$
+
+Pumpe y auf: $xyz=\varepsilon a^kbb$
+Es wäre nach dem Lemma das Wort aaaabb möglich, nach der Spreche jedoch nicht.
+
 ---
 ## Aufgabe 7:
 **Zeigen Sie, dass die Sprache $\{ww^R | w \in \{a,b\}^*\}$ nicht regulär ist.**
