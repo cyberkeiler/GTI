@@ -4,6 +4,9 @@
 
 ![Automat](Automat01.jpg)
 
+$NEA = (\{q_0,...,q_3\}, \{0,1\}, \Delta, q_0, \{q_3\})$
+
+
 ---
 ## Aufgabe 2:
 **Geben Sie jeweils Zustandsübergangsdiagramme (nichtdeterministischer) endlicher Automaten an, die die folgenden Sprachen akzeptieren:**
