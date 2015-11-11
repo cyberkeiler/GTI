@@ -22,6 +22,33 @@ $NEA = (\{q_0,...,q_3\}, \{0,1\}, \Delta, q_0, \{q_3\})$
 
 ![Automat](Automat01_2.jpg)
 
+*DEA in 3 Schritten:*
+1. Zustände mit $\epsilon$ erreichbar:
+
+| $q$ | $q_0$ | $q_1$ | $q_2$ | $q_3$ |
+| :---: | --- | --- | ---- | ---- |
+| $E(q)$ | {$q_0$} | {$q_1$} | {$q_0, q_2$}  | {$q_3$}
+
+2. Eingabe 0,1 unter Hülle:
+
+| $\delta$ | {$q_0$} | {$q_1$} | {$q_2$} | {$q_3$} |
+| :---: | --- | --- | ---- | ---- |
+| $0$ | {$q_1$} | {$q_3$} | $\emptyset$  | {$q_3$} |
+| $1$ | {$q_1$} | $\emptyset$  | $\emptyset$   | {$q_0, q_2, q_3$} |
+3. irgendwas
+
+ K = {$q_0, q_1, q_2, q_3$}
+
+| $\delta*$ | {$q_0$} | {$q_1$} | {$q_3$} | $\emptyset$ | {$q_0, q_2, q_3$}   | {$q_1, q_3$}   | K   |
+| :---: | --- | --- | ---- | ---- |
+| $0$ | {$q_1$} | {$q_3$} | {$q_3$}  | $\emptyset$ | {$q_1, q_3$} | {$q_3$} | {$q_1, q_3$}
+| $1$ | {$q_1$} | $\emptyset$  | {$q_0, q_2, q_3$}   | $\emptyset$ | {$q_0, q_1, q_2, q_3$} | {$q_0, q_1, q_3$} | K
+4. Startzustand ist Epsilonhülle von $q_o$ $E(q_0)$
+$$s=\{q_0\}$$
+5. Endzustand alle die, die Ursprungs-Endzustand $q_2$ beinhalten
+$$F = \{ \{q_0, q_2, q_3\}, \{q_0, q_1, q_2, q_3\}\}$$
+
+
 ---
 ## Aufgabe 2:
 **Geben Sie jeweils Zustandsübergangsdiagramme (nichtdeterministischer) endlicher Automaten an, die die folgenden Sprachen akzeptieren:**
@@ -144,8 +171,22 @@ $q_{ij}=(q_i,q_j): $
 ## Aufgabe 6:
 **Zeigen Sie, dass die Sprache $\{a^mb^k | m\leq k\}\subseteq \{a,b\}^*$ nicht regulär ist.**
 
-Angenommen L ist regulär, so erfüllt L die Aussage des Pumpink Lemma (für reguläre Sprachen). Es sei p die Konstante aus dem Pumping Lemma, dann ist $w=a^pb^p \in L$.
+*Definition Pumping Lemma: *
+(in Klausur am Besten in Text mit einflechten)
+* $\forall L \in REG$
+* $\exists n \in N, n >= 0$
+* $\forall w \in L, |w| >= 0$
+* $\exists x,y,z \in \sum^*: w=xyz, y \neq \epsilon, |xy| <= n$,
+* $\forall i >= 0: xy^iz \in L$
 
+Angenommen L ist regulär, so erfüllt L die Aussage des Pumping Lemma (für reguläre Sprachen). Es sei n eine nat. Zahl wie im Pumping Lemma, dann ist $w=a^nb^n \in L$.
+
+$|a^nb^n|=2n>=n$. Also existieren x,y,z, sodass $w=xyz; y\neq \epsilon; |xy|<=n$. Also $xy=a^k, k<=n;$
+
+$y^l, 1<=l<=k$
+Wir suchen i>=0, sodass $xy^iz \notin L$, dh. $a^{k-l}()$
+
+---
 Für jede Zerlegung $w=xyz$ mit $|y|\geq1$ und $|xy|<p$ so gilt $y \in \{a\}^* $.
 
 Daraus folgt aber $xy^2z=a^{p+|y|}b^p \notin L$ was in Widerspruch zur Aussage des Pumping Lemma steht.
@@ -158,6 +199,16 @@ Falls die Sprache regulär wäre, müsste das Pumping Lemma gelten, also:
 
 Pumpe y auf: $xyz=\varepsilon a^kbb$
 Es wäre nach dem Lemma das Wort aaaabb möglich, nach der Spreche jedoch nicht.
+
+---
+
+
+
+Beweis durch Widerspruch (ein Wort wählen)
+
+Ang.: $L$ wäre regulär.
+Wir wählen $$
+
 
 ---
 ## Aufgabe 7:
