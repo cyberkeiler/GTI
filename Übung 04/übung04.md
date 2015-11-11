@@ -36,14 +36,52 @@ $NEA = (\{q_0,...,q_3\}, \{0,1\}, \Delta, q_0, \{q_3\})$
 ## Aufgabe 3:
 **Geben Sie das Zustandsübergangsdiagramm eines deterministischen endlichen Automaten an, der die Sprache $\{w \in \{a,b\}^* | w \text{ enthaelt genau zwei a und mindestens ein b}\}$ akzeptiert. Die Sprache ist der Schnitt zweier einfacherer Sprachen. Konstruieren Sie zunächst deterministische endliche Automaten für diese Sprachen und kombinieren Sie dann die beiden Automaten wie in der Vorlesung angegeben.**
 
-Die einzelnen Bedingungen werden in verschiedene Automaten umgesetzt.
+**Def. Schnitt zweier Sprachen:**
+* Sein $M_1=(K_1,\Sigma_1,\delta_1,s_1,F_1)$ und $M_2=(K_2,\Sigma_2,\delta_2,s_2,F_2)$ deterministische endliche Automaten mit $K_1 \cap K_2=\emptyset$.
 
-* i: ![Automat](Automat3_1.jpg)
-* j: ![Automat](Automat3_2.jpg)
+ Sei $M=(K,\Sigma,\delta,s,F)$ mit
+ * $K=K_1 \times K_2$
+ * $s=(s_1,s_2)$
+ * $F=F_1 \times F_2$
 
-* $q_{ij}=(q_i,q_j): $
+ und $\delta((q_1,q_2),\sigma)=(\delta_1(q_1,\sigma),\delta_2(q_2,\sigma))$.
+
+* Dann gilt: $L(M)=L(M_1)\cap L(M_2)$  
+
+
+Die einzelnen Bedingungen werden in 2 unabhängigen Automaten umgesetzt.
+
+![Automat](Automat3_1.jpg)
+
+| $q_i$ | | a | b |
+| --- | --- | :---: | :---: |
+| $q_0$ | | $q_2$ | $q_1$ |
+| $q_1$ | | $q_1$ | $q_1$ |
+| $q_2$ | | $q_3$ | $q_3$ |
+| $q_3$ | | $q_3$ | $q_3$ |
+
+![Automat](Automat3_2.jpg)
+
+| $q_j$ | | a | b |
+| --- | --- | :---: | :---: |
+| $q_0$ | | $q_0$ | $q_1$ |
+| $q_1$ | | $q_2$ | $q_0$ |
+| $q_2$ | | $q_1$ | $q_2$ |
+
+$q_{ij}=(q_i,q_j): $
+
 ![Automat](Automat3_3.jpg)
 
+| $q_{ij}$ | | a | b |
+| --- | --- | :---: | :---: |
+| $q_{00}$ | | $q_{10}$ | $q_{01}$ |
+| $q_{11}$ | | $q_{11}$ | $q_{01}$ |
+| $q_{10}$ | | $q_{20}$ | $q_{11}$ |
+| $q_{11}$ | | $q_{21}$ | $q_{11}$ |
+| $q_{20}$ | | $q_{30}$ | $q_{21}$ |
+| $q_{21}$ | | $q_{31}$ | $q_{21}$ |
+| $q_{30}$ | | $q_{30}$ | $q_{31}$ |
+| $q_{31}$ | | $q_{31}$ | $q_{31}$ |
 ---
 ## Aufgabe 4:
 **Sei $\Sigma=\{a,b,c\}$. Geben Sie reguläre Ausdrücke für die folgenden Sprachen an. Sie dürfen dabei wie in der Vorlesung angegeben Klammern einsparen.**
