@@ -38,3 +38,22 @@ Alle Elemente kommen in beiden Mengen vor.
 
 ### Epsilonübergang E(q)
 Menge aller Zustände, die vom Zustand q über $\epsilon$-Übergänge erreicht werden können
+
+##Reguläre Ausdrücke
+
+### reguläre Ausdrücke
+ 1. $\emptyset$ reh. Ausdruck
+ 2. $\sigma, \sigma \in \Sigma $ reg. Ausdruck
+ 3. $\alpha, \beta,$ reg Ausdruck; $(\alpha \cup \beta)$ reg Ausdruck
+ 4. $\alpha, \beta,$ reg Ausdruck; $(\alpha \beta)$ reg Ausdruck
+ 5. $\alpha, \beta,$ reg Ausdruck; $(\alpha)^*$ reg Ausdruck
+
+### reguläre Sprachen
+ Sprachen die von endliche Automaten akzeptiert werden
+
+#### Pumping Lemma (AUSWENDIG!)
+ * $\forall L \in REG$
+ * $\exists n \in N, n >= 0$
+ * $\forall w \in L, |w| >= 0$
+ * $\exists x,y,z \in \sum^*: w=xyz, y \neq \epsilon, |xy| <= n$,
+ * $\forall i >= 0: xy^iz \in L$
