@@ -36,6 +36,8 @@ in der Vorlesung angegeben Klammern einsparen.**
 ## Aufgabe 6:
 **Geben Sie eine rechtslineare Grammatik an, die die Sprache $L(a^*bba^*)$ erzeugt.**
 
+$G=(\{S,B,C\},\{a,b\},\{S \rightarrow aS|aB, B \rightarrow bbA, A \rightarrow aA|A\}, S)$
+
 ---
 ## Aufgabe 7:
 **Sei $\Sigma = \{a,b\}$ und sei $G=(V, \Sigma , R, S)$ eine kontextfreie Grammatik, wobei $V=\{S,A,B\}$ und
