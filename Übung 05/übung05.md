@@ -28,9 +28,17 @@ in der Vorlesung angegeben Klammern einsparen.**
 ## Aufgabe 5:
 **Welche der folgenden Aussagen sind wahr, welche falsch? Begründen Sie jeweils ihre Antwort!**
 * (a) **Jede Teilmenge einer regulären Sprache ist eine reguläre Sprache.**
+ 
+ Falsch, $L=\{a,b\}^* \rightarrow L=\{w|w\in \{a,b\}^*\}$
 * (b) **Falls L eine reguläre Sprache ist, so ist die Sprache $L^R=\{w^R | w \in L\}$ ebenfalls regulär.**
+
+ Wahr, Automat von L kann in $L^R$ umgewandelt werden(Anfangszustand = Endzustand , Endzustand = Anfangszustand, Pfeile umkehren für NEA)
 * (c) **Für jede reguläre Sprache L gibt es einen NEA mit genau einem Endzustand.**
+
+ Wahr, im NEA werden alle Endzustände zu einem unter Eingabe von Epsilon zu einem Eindzustand geführt. 
 * (d) **Falls $L \subseteq \Sigma^*$ regulär ist, dann ist auch $\{w | w \in L \land w \in L^R\}$ regulär.**
+
+ Wahr, $L^{\cap}=L\cap L^R$
 
 ---
 ## Aufgabe 6:
