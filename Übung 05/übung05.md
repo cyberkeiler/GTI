@@ -5,10 +5,10 @@
 in der Vorlesung angegeben Klammern einsparen.**
 * (a) $\{w \in \Sigma^* | w \text{ enthaelt geradzahlig viele a}\}$
 
- $(b^* a b^* a b^* ) \cap b^* $
+ $b^* (b^* a b^* a b^* )^* b^* $
 * (b) $\{w \in \Sigma^* | \text{ in w gibt es genau ein Vorkommen des Teilwortes aaa}\}$
 
- $(b^* (a^* \cup aaa))^* \cap aaa $
+ $((ab)^*(aab)^*b^*)^* aaa ((ab)^* (aab)^* b^*)^*$
 
 ---
 ## Aufgabe 2:
